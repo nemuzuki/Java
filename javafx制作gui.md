@@ -12,7 +12,7 @@
 > 6.最后在主界面的run三角左边，edit configuration，JRE改成1.8
 > 終わり
 
-然后就得到了Main.java，Controller.java和sample.fxml三个文件，main是主函数，controller和fxml由SceneBuilder手动布局后生成
+然后就得到了Main.java，Controller.java和sample.fxml三个文件，main是主函数，controller里面编写fxml中动作的功能函数，fxml由SceneBuilder手动布局后生成
 
 #### JavaFX可以使用两种方法构造gui：
 source:https://blog.csdn.net/weixin_41571493/article/details/81415327
