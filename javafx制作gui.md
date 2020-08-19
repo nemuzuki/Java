@@ -15,6 +15,7 @@
 然后就得到了Main.java，Controller.java和sample.fxml三个文件，main是主函数，controller和fxml由SceneBuilder手动布局后生成
 
 #### JavaFX可以使用两种方法构造gui：
+source:https://blog.csdn.net/weixin_41571493/article/details/81415327
 
 > 1.一种是直接在main里面写代码，通过HBox生成一个窗格pane
 >
