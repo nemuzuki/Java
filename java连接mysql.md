@@ -4,6 +4,8 @@ java连接数据库
 
 url必须写全了，不然报错，数据库端口为3306（不是apache的）
 
+jdk1.8.0不可以，jdk14可以
+
 ```java
 package com.company;
 import java.sql.*;
