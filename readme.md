@@ -8,3 +8,5 @@ create project时要选模板，base package包名默认com.company
 在configuration中，Main Class默认com.company.Main，working dictionary就是项目文件夹
 
 ```
+java打包成jar：
+https://jingyan.baidu.com/article/c275f6ba0bbb65e33d7567cb.html
