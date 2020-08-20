@@ -26,9 +26,22 @@ source:https://blog.csdn.net/weixin_41571493/article/details/81415327
 > primaryStage.setScene(new Scene(root, 1000, 800));
 > ```
 
+#### 一些常用转换
 
 
-一个字数统计的例子（Main.java），用到了一个TextArea（多行文本框），一个button，一个显示字数的rectangle：
+```java
+float转String：String s=String.valueOf(i);
+
+String转float：float score=Float.parseFloat(score_str);
+
+SimpleStringProperty转String：String score_str=s.score.getValue();
+
+ArrayList转ObservableList：final ObservableList<Score> data = FXCollections.observableArrayList(observableArrayList);
+```
+
+
+
+#### 一个字数统计的例子（Main.java），用到了一个TextArea（多行文本框），一个button，一个显示字数的rectangle：
 
 ```java
 package sample;
