@@ -1,10 +1,10 @@
-java连接数据库
+### java连接数据库
 
 参考：https://blog.csdn.net/baidu_41560343/article/details/86489987
 
 url必须写全了，不然报错，数据库端口为3306（不是apache的）
 
-jdk1.8.0不可以，jdk14可以
+#### 关键是将mysql-connector-java-8.0.16.jar加入到file->project structure->modules->+->jars or directories（详见参考url），下面才能访问驱动
 
 ```java
 package com.company;
