@@ -1,12 +1,7 @@
-对于IDEA和pycharm（都属于jetbrain），注释和取消的快捷键是ctrl+/
+Java课程作业
 
-对于vs，是ctrl+k->ctrl+c，取消是ctrl+k->ctrl+u
-```
-IDEA创建project的过程：
-create project时要选模板，base package包名默认com.company
-每个项目都要有一个Main.java，文件中就有一个名为Main的类
-在configuration中，Main Class默认com.company.Main，working dictionary就是项目文件夹
+1.五子棋
 
-```
-java打包成jar：
-https://jingyan.baidu.com/article/c275f6ba0bbb65e33d7567cb.html
+2.CD商店管理
+
+3.Swing实现计算器
