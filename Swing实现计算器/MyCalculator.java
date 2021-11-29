@@ -50,7 +50,7 @@ class BorderLayoutDemo extends JFrame {
 		private JButton btnChangeSign = new JButton("+/-");
 		private JButton btnPoint = new JButton(".");
 		
-		//按下数字按钮的处理方法
+		//按下数字键的处理方法
 		class BtnNumProcess implements ActionListener {
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -165,7 +165,7 @@ class BorderLayoutDemo extends JFrame {
 				else {
 					output.setText(answer+"");
 				}
-				System.out.println(op1+operator+op2+"="+answer);//输出算式记录
+//				System.out.println(op1+operator+op2+"="+answer);//输出算式记录
 				operator=null;
 			}
 		}
@@ -212,7 +212,7 @@ class BorderLayoutDemo extends JFrame {
 				lastPressIsNum=false;
 				answer=Double.parseDouble(output.getText());
 				if(answer<0) {//根号下不能是负数
-					output.setText("Invalid i)nput!");
+					output.setText("Invalid input!");
 					return;
 				}
 				answer=Math.sqrt(answer);
@@ -279,7 +279,7 @@ class BorderLayoutDemo extends JFrame {
 		class BtnBackspaceProcess implements ActionListener{
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				lastPressIsNum=false;
+				lastPressIsNum=true;
 				String labelContent=output.getText();
 				String newContentString="";
 				for(int i=0;i<labelContent.length()-1;++i) {
@@ -369,6 +369,7 @@ public class MyCalculator {
 		frame.setSize(600, 200);// 窗口大小
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);// 用户单击窗口的关闭按钮时程序执行的操作
 		frame.pack();
+		frame.setAlwaysOnTop(!frame.isAlwaysOnTop());//窗口总在最前
 		frame.setVisible(true);// 展示窗口
 	}
 }
