@@ -7,8 +7,7 @@ import java.io.PrintWriter;
 import java.net.Socket;
 
 class ReceiveThread extends Thread{//专门用来接收信息的线程
-	BufferedReader stdin,in;
-	PrintWriter out;
+	BufferedReader in;
 	public ReceiveThread(BufferedReader in) {
 		this.in=in;
 	}
