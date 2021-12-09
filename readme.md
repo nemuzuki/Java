@@ -8,6 +8,6 @@ Java课程作业
 
 4.Swing实现画板
 
-5.TCP双人通信
+5.Swing实现TCP双人通信
 
 6.Swing实现五子棋（包含聊天功能）
