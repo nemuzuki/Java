@@ -16,10 +16,9 @@ public class Server{
 		
 		BufferedReader in=new BufferedReader(new InputStreamReader(s.getInputStream()));
 		PrintWriter out=new PrintWriter(s.getOutputStream(),true);//输出流
-		ReceiveThread receiveThread=new ReceiveThread(in);
 		BufferedReader stdin=new BufferedReader(new InputStreamReader(System.in));
 		
-		receiveThread.start(); 
+		new ReceiveThread(in).start(); 
 		String message;
 		while(true) {
 			message = stdin.readLine();
