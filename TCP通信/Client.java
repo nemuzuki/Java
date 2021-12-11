@@ -33,8 +33,7 @@ public class Client {
 		PrintWriter out=new PrintWriter(s.getOutputStream(),true);//true表示flush，直接推出输出流的信息，不在缓冲区里保存
 		BufferedReader stdin=new BufferedReader(new InputStreamReader(System.in));
 		
-		ReceiveThread receiveThread=new ReceiveThread(in);
-		receiveThread.start(); 
+		new ReceiveThread(in).start(); 
 		String message;
 		while(true) {
 			message = stdin.readLine();
